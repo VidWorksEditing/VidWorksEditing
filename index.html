@@ -1,140 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>VidWorks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidWorks Editing • Turning Ideas Into Motion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap');
+        
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
 
-<style>
-body{
-margin:0;
-font-family:Arial;
-background:#0a0a0f;
-color:white;
-}
+        .hero-bg {
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a0000 100%);
+        }
 
-header{
-padding:60px 20px;
-text-align:center;
-background:linear-gradient(135deg,#000,#1a1a1a);
-}
+        .logo-text {
+            background: linear-gradient(90deg, #ef4444, #f8fafc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-.logo{
-width:320px;
-max-width:90%;
-margin-bottom:20px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.5);
-}
-
-h1{font-size:4rem;margin:0;}
-p{color:#bbb;}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 22px;
-background:white;
-color:black;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-section{
-padding:50px 20px;
-max-width:1000px;
-margin:auto;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
-
-.card{
-background:#16161d;
-padding:20px;
-border-radius:10px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.03);
-}
-
-img{
-width:100%;
-border-radius:10px;
-margin-top:10px;
-}
-
-a{
-color:#4da3ff;
-text-decoration:none;
-}
-a:hover{
-text-decoration:underline;
-}
-</style>
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 60px -15px rgb(239 68 68 / 0.3);
+        }
+    </style>
 </head>
+<body class="bg-zinc-950 text-white">
 
-<body>
+    <!-- HEADER / HERO -->
+    <header class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Left Side - Logo & Text -->
+            <div class="space-y-8">
+                <!-- Your New Logo -->
+                <div class="mb-8">
+                    <img src="/home/workdir/attachments/ChatGPT Image Jun 11, 2026, 06_37_55 PM.png" 
+                         alt="VidWorks Editing Logo" 
+                         class="w-full max-w-lg mx-auto md:mx-0 drop-shadow-2xl">
+                </div>
 
-<header>
+                <h1 class="heading-font text-6xl md:text-7xl font-bold tracking-tighter">
+                    TURNING IDEAS<br>INTO <span class="text-red-500">MOTION</span>
+                </h1>
+                
+                <p class="text-xl text-zinc-300 max-w-lg">
+                    Professional Video Editing • Animation • Lyric Videos • Photo Animation • Loops & Promotional Content
+                </p>
 
-<!-- MAIN IMAGE / LOGO -->
-<img class="logo" src="/mnt/data/ChatGPT Image Jun 11, 2026, 06_35_53 PM.png" alt="VidWorks Logo">
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" 
+                       class="bg-red-600 hover:bg-red-700 px-10 py-5 rounded-2xl font-semibold text-lg flex items-center gap-3 transition-all">
+                        <i class="fa-solid fa-rocket"></i> HIRE ME NOW
+                    </a>
+                    <a href="#portfolio" 
+                       class="border border-white/50 hover:border-white px-10 py-5 rounded-2xl font-semibold text-lg transition-all">
+                        VIEW PORTFOLIO
+                    </a>
+                </div>
 
-<h1>VIDWORKS</h1>
-<p>Turning Ideas Into Motion</p>
+                <!-- Social Proof -->
+                <div class="flex gap-8 text-sm pt-6">
+                    <div>⭐ 4.9 Average Rating</div>
+                    <div>⚡ Fast Turnaround</div>
+                    <div>✅ 100+ Projects</div>
+                </div>
+            </div>
 
-<a class="btn" href="#contact">Hire Me</a>
-</header>
+            <!-- Right Side - Character -->
+            <div class="flex justify-center md:justify-end">
+                <img src="/home/workdir/attachments/ChatGPT Image Jun 11, 2026, 06_37_55 PM.png" 
+                     alt="VidWorks Creator" 
+                     class="w-80 md:w-96 drop-shadow-2xl">
+            </div>
+        </div>
 
-<section>
-<h2>Services</h2>
+        <!-- Navigation -->
+        <nav class="absolute top-0 left-0 right-0 py-6 px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="/home/workdir/attachments/ChatGPT Image Jun 11, 2026, 06_37_55 PM.png" 
+                     alt="Logo" class="h-10">
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#services" class="hover:text-red-400 transition">Services</a>
+                <a href="#portfolio" class="hover:text-red-400 transition">Portfolio</a>
+                <a href="#contact" class="hover:text-red-400 transition">Contact</a>
+            </div>
+            <a href="#contact" class="bg-red-600 px-6 py-3 rounded-xl text-sm font-semibold">HIRE ME</a>
+        </nav>
+    </header>
 
-<div class="grid">
-<div class="card">🎬 Video Editing</div>
-<div class="card">✨ Animation</div>
-<div class="card">🎨 Photo Editing</div>
-<div class="card">🚀 Promotional Content</div>
-</div>
-</section>
+    <!-- SERVICES -->
+    <section id="services" class="py-24 bg-black">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-5xl font-bold mb-4">My Services</h2>
+                <p class="text-zinc-400 text-lg">High-quality motion content that stands out</p>
+            </div>
 
-<section>
-<h2>Portfolio</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-zinc-900 border border-red-900/30 rounded-3xl p-8 card-hover">
+                    <span class="text-4xl mb-4 block">🎬</span>
+                    <h3 class="text-2xl font-semibold mb-3">Video Editing</h3>
+                    <p class="text-zinc-400">Cinematic edits, color grading, sound design & storytelling.</p>
+                </div>
+                <div class="bg-zinc-900 border border-red-900/30 rounded-3xl p-8 card-hover">
+                    <span class="text-4xl mb-4 block">✨</span>
+                    <h3 class="text-2xl font-semibold mb-3">Photo Animation</h3>
+                    <p class="text-zinc-400">Bring static photos to life with smooth cinematic animations.</p>
+                </div>
+                <div class="bg-zinc-900 border border-red-900/30 rounded-3xl p-8 card-hover">
+                    <span class="text-4xl mb-4 block">🎵</span>
+                    <h3 class="text-2xl font-semibold mb-3">Lyric Videos</h3>
+                    <p class="text-zinc-400">Dynamic, beat-synced lyric animations for artists.</p>
+                </div>
+                <div class="bg-zinc-900 border border-red-900/30 rounded-3xl p-8 card-hover">
+                    <span class="text-4xl mb-4 block">🔄</span>
+                    <h3 class="text-2xl font-semibold mb-3">Video Loops</h3>
+                    <p class="text-zinc-400">Seamless looping videos perfect for social media.</p>
+                </div>
+                <div class="bg-zinc-900 border border-red-900/30 rounded-3xl p-8 card-hover">
+                    <span class="text-4xl mb-4 block">📸</span>
+                    <h3 class="text-2xl font-semibold mb-3">Animated Photo Loops</h3>
+                    <p class="text-zinc-400">Stunning looping animations from single photos.</p>
+                </div>
+                <div class="bg-zinc-900 border border-red-900/30 rounded-3xl p-8 card-hover">
+                    <span class="text-4xl mb-4 block">🚀</span>
+                    <h3 class="text-2xl font-semibold mb-3">Promotional Content</h3>
+                    <p class="text-zinc-400">High-converting ads and brand videos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="grid">
-<div class="card">
-<p>Your Work</p>
-<img src="https://via.placeholder.com/600x300">
-</div>
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 bg-zinc-950">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-5xl font-bold mb-8">Ready to Bring Your Vision to Life?</h2>
+            <p class="text-zinc-400 text-xl mb-10">Let's create something fire together.</p>
+            
+            <a href="mailto:vidworks.editing@gmail.com" 
+               class="inline-flex items-center gap-4 bg-red-600 hover:bg-red-700 text-white text-2xl font-semibold px-12 py-7 rounded-3xl transition-all">
+                📧 vidworks.editing@gmail.com
+            </a>
 
-<div class="card">
-<p>Your Work</p>
-<img src="https://via.placeholder.com/600x300">
-</div>
-</div>
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="https://www.tiktok.com/@videosforyourbusiness" target="_blank" class="bg-zinc-900 hover:bg-zinc-800 p-6 rounded-2xl transition">
+                    <i class="fa-brands fa-tiktok text-4xl mb-3"></i><br>TikTok
+                </a>
+                <a href="https://www.reddit.com/user/VidWorksEditing/" target="_blank" class="bg-zinc-900 hover:bg-zinc-800 p-6 rounded-2xl transition">
+                    <i class="fa-brands fa-reddit text-4xl mb-3"></i><br>Reddit
+                </a>
+                <a href="https://www.fiverr.com/sellers/rickyworth337/edit" target="_blank" class="bg-zinc-900 hover:bg-zinc-800 p-6 rounded-2xl transition">
+                    <i class="fa-solid fa-store text-4xl mb-3"></i><br>Fiverr
+                </a>
+                <a href="mailto:vidworks.editing@gmail.com" class="bg-zinc-900 hover:bg-zinc-800 p-6 rounded-2xl transition">
+                    <i class="fa-solid fa-envelope text-4xl mb-3"></i><br>Email
+                </a>
+            </div>
+        </div>
+    </section>
 
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-
-<p>Email: <a href="mailto:vidworks.editing@gmail.com">vidworks.editing@gmail.com</a></p>
-
-<p>TikTok: <a href="https://www.tiktok.com/@videosforyourbusiness" target="_blank">videosforyourbusiness</a></p>
-
-<p>Reddit: <a href="https://www.reddit.com/user/VidWorksEditing/" target="_blank">VidWorksEditing</a></p>
-
-<p>Fiverr: <a href="https://www.fiverr.com/sellers/rickyworth337/edit" target="_blank">My Fiverr Profile</a></p>
-</section>
+    <footer class="py-10 text-center text-zinc-500 border-t border-zinc-900">
+        © 2026 VidWorks Editing • Made with passion for motion
+    </footer>
 
 </body>
 </html>
 
-If you want the next upgrade, I can level this up into something real agency style:
-
-animated logo fade-in
