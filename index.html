@@ -1,11 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VidWorks Editing • Turning Ideas Into Motion</title>
+    <title>VidWorks Editing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
@@ -16,73 +14,89 @@
 </head>
 <body class="bg-zinc-950 text-white">
 
-    <!-- NAV BAR - Logo at the top -->
-    <nav class="bg-black border-b border-red-900 py-5 sticky top-0 z-50">
+    <!-- HEADER / TOP NAV with Logo -->
+    <header class="bg-black border-b border-red-900 py-6 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <img src="logo.png" alt="VidWorks Editing" class="h-16">
-            <a href="#contact" 
-               class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-2xl font-bold transition">
-               HIRE ME
-            </a>
-        </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <header class="min-h-screen bg-gradient-to-br from-black via-zinc-950 to-red-950 flex items-center">
-        <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
-            
-            <!-- Left side -->
-            <div class="space-y-8 text-center md:text-left">
-                <img src="logo.png" alt="VidWorks Editing" class="mx-auto md:mx-0 max-w-lg w-full">
-
-                <h1 class="heading-font text-6xl md:text-7xl font-bold leading-tight">
-                    TURNING IDEAS<br>INTO <span class="text-red-500">MOTION</span>
-                </h1>
-
-                <p class="text-xl md:text-2xl text-zinc-300 max-w-lg">
-                    Professional Video Editing • Photo Animation • Lyric Videos • Loops & Promotional Content
-                </p>
-
-                <a href="#contact" 
-                   class="inline-block bg-red-600 hover:bg-red-700 px-10 py-6 rounded-3xl text-xl font-semibold transition">
-                    Hire Me Now
-                </a>
-            </div>
-
-            <!-- Right side - Logo again for visual impact -->
-            <div class="flex justify-center">
-                <img src="logo.png" alt="VidWorks" class="max-w-md w-full drop-shadow-2xl">
-            </div>
+            <img src="logo.png" alt="VidWorks Editing" class="h-20">
+            <a href="#contact" class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-2xl font-bold">HIRE ME</a>
         </div>
     </header>
 
-    <!-- SERVICES -->
-    <section id="services" class="py-24 bg-black">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="heading-font text-5xl font-bold text-center mb-16">Services</h2>
+    <!-- MAIN CONTENT -->
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        <div class="text-center mb-16">
+            <h1 class="heading-font text-6xl md:text-7xl font-bold leading-tight">
+                TURNING IDEAS<br>INTO <span class="text-red-500">MOTION</span>
+            </h1>
+            <p class="text-2xl text-zinc-300 mt-6">
+                Professional Video Editing • Animation • Lyric Videos • Loops
+            </p>
+        </div>
+
+        <!-- SERVICES -->
+        <section id="services" class="mb-20">
+            <h2 class="heading-font text-5xl font-bold text-center mb-12">My Services</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-zinc-900 p-8 rounded-3xl">🎬 Video Editing</div>
-                <div class="bg-zinc-900 p-8 rounded-3xl">✨ Photo Animation</div>
-                <div class="bg-zinc-900 p-8 rounded-3xl">🎵 Lyric Videos</div>
-                <div class="bg-zinc-900 p-8 rounded-3xl">🔄 Video Loops</div>
-                <div class="bg-zinc-900 p-8 rounded-3xl">📸 Animated Photo Loops</div>
-                <div class="bg-zinc-900 p-8 rounded-3xl">🚀 Promotional Content</div>
+                <div class="bg-zinc-900 p-8 rounded-3xl text-center">🎬 Video Editing</div>
+                <div class="bg-zinc-900 p-8 rounded-3xl text-center">✨ Photo Animation</div>
+                <div class="bg-zinc-900 p-8 rounded-3xl text-center">🎵 Lyric Videos</div>
+                <div class="bg-zinc-900 p-8 rounded-3xl text-center">🔄 Video Loops</div>
+                <div class="bg-zinc-900 p-8 rounded-3xl text-center">📸 Animated Photo Loops</div>
+                <div class="bg-zinc-900 p-8 rounded-3xl text-center">🚀 Promotional Content</div>
             </div>
+        </section>
+    </main>
+
+    <!-- BOTTOM SECTION - Secondary Image + Links -->
+    <section class="bg-zinc-900 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <!-- Secondary Image -->
+            <div class="flex justify-center mb-12">
+                <img src="secondary.png" 
+                     alt="VidWorks Editing" 
+                     class="rounded-2xl shadow-2xl max-w-4xl w-full">
+            </div>
+
+            <!-- Clickable Links with Symbols -->
+            <div class="text-center">
+                <h3 class="text-3xl font-bold mb-10">Connect With Me</h3>
+                <div class="flex flex-wrap justify-center gap-8 text-xl">
+                    
+                    <a href="https://www.tiktok.com/@videosforyourbusiness" target="_blank" 
+                       class="flex items-center gap-3 hover:text-red-400 transition">
+                        <i class="fa-brands fa-tiktok text-4xl"></i> TikTok
+                    </a>
+                    
+                    <a href="https://www.reddit.com/user/VidWorksEditing/" target="_blank" 
+                       class="flex items-center gap-3 hover:text-red-400 transition">
+                        <i class="fa-brands fa-reddit text-4xl"></i> Reddit
+                    </a>
+                    
+                    <a href="https://www.fiverr.com/sellers/rickyworth337/edit" target="_blank" 
+                       class="flex items-center gap-3 hover:text-red-400 transition">
+                        <i class="fa-solid fa-store text-4xl"></i> Fiverr
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="py-24 bg-zinc-900 text-center">
-        <h2 class="heading-font text-5xl font-bold mb-8">Ready to Create?</h2>
-        <a href="mailto:vidworks.editing@gmail.com" class="text-4xl text-red-500 hover:underline">
+    <section id="contact" class="py-20 bg-black text-center">
+        <h2 class="text-4xl font-bold mb-6">Let's Work Together</h2>
+        <a href="mailto:vidworks.editing@gmail.com" class="text-3xl text-red-500 hover:underline">
             vidworks.editing@gmail.com
         </a>
     </section>
 
-    <footer class="py-8 text-center text-zinc-500 border-t border-zinc-800">
+    <footer class="py-8 text-center text-zinc-500">
         © 2026 VidWorks Editing
     </footer>
 
 </body>
 </html>
+
+
 
